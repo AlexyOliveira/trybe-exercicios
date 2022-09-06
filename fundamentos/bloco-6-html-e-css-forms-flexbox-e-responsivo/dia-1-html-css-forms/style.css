@@ -1,6 +1,6 @@
 body{
-    background-image: url(/travel2.jpg) ;
-
+    background-image: url(/travel2.jpg)  ;
+    background-attachment: fixed;
 }
 
 
@@ -10,7 +10,7 @@ form{
     margin: auto;
     margin-top: 50px;
     margin-bottom: 80px;
-   
+    box-shadow: black;
 }
 
 .favoritePlace {
@@ -64,4 +64,8 @@ form{
     padding: 5px;
     color: white;
     border-radius: 5px;
+}
+
+#porque {
+    resize: none;
 }
