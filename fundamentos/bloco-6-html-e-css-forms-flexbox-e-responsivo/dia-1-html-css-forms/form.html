@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<header id="header">  
+    <form action="" method="get" id="for">
+
+        <fieldset id="fieldSet">
+            <legend id="legenda">Preencha o formulário para concorrer</legend>
+            <div id="container">
+                <label for="nome">Nome: <input type="text" name="fullName" id="nome" minlength="10" maxlength="40" required></label><br><br>
+                <label for="email">Email: <input type="email" name="email" id="email" minlength="10" maxlength="50" required></label><br>
+                <h2>destino preferido</h2>
+                <label class="favoritePlace" for="op1">CIDADE<input id="op1" type="radio" name="Destino-favorito" class="check"></label>
+                <label class="favoritePlace" for="op2">CAMPO<input id="op2" type="radio" name="Destino-favorito" class="check"></label>
+                <label class="favoritePlace" for="op3">PRAIA<input id="op3" type="radio" name="Destino-favorito" class="check"></label>
+                <label class="favoritePlace" for="op4">MONTANHAS<input id="op4" type="radio" name="Destino-favorito" class="check"></label><br>
+               <br>
+                <div id="why">
+                   <h2>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h2>
+                   <textarea name="why" id="porque" cols="35" rows="10" maxlength="500" required></textarea>
+                </div><br>
+                <h3>Qual a melhor data para realizar sua viagem?</h3>
+                <input type="date" name="date" id="data"><br><br>
+                Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                <!-- Sim<input type="radio" name="sim" id="yes"> -->
+                <input type="checkbox" name="receberEmail" id="checkTrybe"><br><br>
+                Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                <input type="checkbox" name="termos" required id="termos" ><br><br>
+                <button type="submit" id="enviar">Enviar</button>
+            </div> 
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</header>
+</body>
+</html>

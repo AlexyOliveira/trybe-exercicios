@@ -1,0 +1,67 @@
+body{
+    background-image: url(/travel2.jpg) ;
+
+}
+
+
+form{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+   
+}
+
+.favoritePlace {
+    margin-left: 20px;
+    
+}
+
+
+#container{
+    padding: 30px;
+    
+}
+
+#legenda{
+    font-size: 30px;
+    background-color: rgb(34, 132, 31);
+    border-radius: 15px;
+    color: white;
+    font-weight: 2px;
+    padding: 5px;
+    
+    
+}
+
+#why{
+    background-color: rgba(17, 61, 5, 0.502);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#header {
+    width: 70%;
+    margin: auto;
+}
+
+#clear {
+    float: right;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+#fieldSet {
+    border-radius: 20px;
+    background-color: rgba(0, 255, 255, 0.955);
+}
+
+#enviar {
+    background-color: rgb(4, 91, 153);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
