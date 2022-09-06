@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+        
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  
+
+
+</head>
+  <body>
+    <script>
+    
+    // 1
+      const tagh1 = document.createElement('h1')
+      tagh1.innerText = 'Exercício 5.1 - JavaScript DOM'
+      document.body.appendChild(tagh1)
+      tagh1.className = 'litle'
+
+    // 2
+
+      const maine = document.createElement('main')
+      maine.className = 'main-content'
+      document.body.appendChild(maine)
+
+    // 3
+
+      const sectione = document.createElement('section')
+      sectione.className = 'center-content'
+      maine.appendChild(sectione)
+
+    // 4 
+
+      const tagp = document.createElement('p')
+      tagp.innerText = 'Lista de um a 10!'
+      sectione.appendChild(tagp)
+
+    // 5 
+
+      const section = document.createElement('section')
+
+      section.className = 'left-content'
+      maine.appendChild(section)
+
+
+
+    // 6 
+
+      const sectionRight = document.createElement('section')
+      sectionRight.className = 'right-content'
+      maine.appendChild(sectionRight)   
+      sectionRight.style.margin = 'auto'
+   
+    // 7 
+      const image = document.createElement('img')
+      image.className = 'small-image'
+      image.src = 'https://picsum.photos/200'
+      section.appendChild(image)
+
+    // 8
+
+      const list = document.createElement('ul')
+      sectionRight.appendChild(list)
+
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+
+      for (let index = 0; index < arrayNumbers.length; index += 1) {
+        
+        const elementLi = document.createElement('li')
+        
+        elementLi.innerText = arrayNumbers[index]
+
+        list.appendChild(elementLi)
+       
+
+      }
+
+    // 9
+      
+       
+        for (let index = 0; index < 3; index++) {
+         const tagh3 = document.createElement('h3')
+         tagh3.className = 'description'
+         maine.appendChild(tagh3) 
+        }
+
+    // parte 2 
+
+    // 1. add classe little in h1
+
+    // 2. add classe description in tags h3
+
+    // 3
+      maine.removeChild(section)
+    
+    // 4. sectionRight centralized 
+
+    // 5 
+
+        sectione.parentNode.style.backgroundColor = 'green'
+
+    // 6 
+
+        const ul = document.getElementsByTagName('ul')[0];
+        ul.lastChild.remove();
+        ul.lastChild.remove()
+
+    // finish   
+      
+
+      
+    </script>
+  </body>
+</html>
