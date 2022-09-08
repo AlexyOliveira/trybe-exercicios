@@ -1,0 +1,53 @@
+body{
+    background-image: url(/travel2.jpg)  ;
+    background-attachment: fixed;
+    min-width: 800px;
+}
+
+
+form{
+    
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+   
+}
+
+.favoritePlace {
+    margin-left: 20px;
+    
+}
+
+
+#container{
+    padding: 30px;
+    
+}
+
+#header {
+    width: 70%;
+    margin: auto;
+}
+
+
+.form-check {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.form-check-input{
+   
+}
+
+.container1 {
+    margin: 40px 200px;
+    background-color: rgba(7, 224, 224, 0.736);
+    border-radius: 20px;
+
+}
+
+.btn{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
