@@ -1,16 +1,21 @@
+
 html {
     box-sizing: border-box;
   }
   
   *, *:before, *:after {
     box-sizing: inherit;
+   
   }
 
   body{
     font-size: 20px;
     min-width: 360px;
     
+    
   }
+
+  
 
 header{
     display: flex;
@@ -19,6 +24,7 @@ header{
   align-items: center;
   background-color: rgb(25, 30, 30);
   color: white;
+ 
   
  
 }
@@ -47,36 +53,107 @@ nav ul li:active{
 }
 
 
+.aside-two{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 
+#btn-chapters{
+    border-radius: 0 0 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 413px) {
-body{
+.dropdown-menu{
     background-color: grey;
 }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+.main-content{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/folha.jpg);
     
 }
+.main-content h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header{
+        font-size: 20px;
+    }
+    header p{
+        font-size: 30px;
+    }
+
+    .main-content{
+        font-size: 20px;
+      margin: 0;
+      padding: 30px;
+    }
+
+    .aside-two{
+       font-size: 20px;
+    }
+    nav ul li {
+        margin-right: 35px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header{
+        font-size: 25px;
+    }
+    header p{
+        font-size: 35px;
+    }
+
+    .main-content{
+        font-size: 20px;
+       padding: 30px;
+    }
+
+    .aside-two{
+       font-size: 25px;
+    }
+    nav ul li {
+        margin-right: 50px;
+    }
+
+ }
+ 

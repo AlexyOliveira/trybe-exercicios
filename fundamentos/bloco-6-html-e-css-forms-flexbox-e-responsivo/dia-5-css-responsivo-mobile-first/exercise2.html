@@ -4,11 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Media Query Exercise 2</title>
-  <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
+ 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
   <link rel="stylesheet" href="exercise2.css" />
 </head>
 <body>
-  <div class="container">
+  <div>
     <header>
       <p>Alice's Adventures in Wonderland</p>
       <nav>
@@ -20,21 +22,26 @@
       </nav>
     </header>
     <aside class="aside-one">
-      <h2>Chapters</h2>
-      <ul>
-        <li>I. Down the Rabbit-Hole</li>
-        <li>II. The Pool of Tears</li>
-        <li>III. A Caucus-Race and a Long Tale</li>
-        <li>IV. The Rabbit Sends in a Little Bill</li>
-        <li>V. Advice from a Caterpillar</li>
-        <li>VI. Pig and Pepper</li>
-        <li>VII. A Mad Tea-Party</li>
-        <li>VIII. The Queen's Croquet-Ground</li>
-        <li>IX. The Mock Turtle's Story</li>
-        <li>X. The Lobster Quadrille</li>
-        <li>XI. Who Stole the Tarts?</li>
-        <li>XII. Alice's Evidence</li>
-      </ul>
+      
+    <div class="dropdown">
+            <button id="btn-chapters" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Chapters
+            </button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">I. Down the Rabbit-Hole</li>
+                <li class="dropdown-item">II. The Pool of Tears</li>
+                <li class="dropdown-item">III. A Caucus-Race and a Long Tale</li>
+                <li class="dropdown-item">IV. The Rabbit Sends in a Little Bill</li>
+                <li class="dropdown-item">V. Advice from a Caterpillar</li>
+                <li class="dropdown-item">VI. Pig and Pepper</li>
+                <li class="dropdown-item">VII. A Mad Tea-Party</li>
+                <li class="dropdown-item">VIII. The Queen's Croquet-Ground</li>
+                <li class="dropdown-item">IX. The Mock Turtle's Story</li>
+                <li class="dropdown-item">X. The Lobster Quadrille</li>
+                <li class="dropdown-item">XI. Who Stole the Tarts?</li>
+                <li class="dropdown-item">XII. Alice's Evidence</li>
+           </ul>
+     </div>
     </aside>
     <aside class="aside-two">
       <h2>Information</h2>
@@ -218,5 +225,8 @@
       </p>
     </footer>
   </div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
