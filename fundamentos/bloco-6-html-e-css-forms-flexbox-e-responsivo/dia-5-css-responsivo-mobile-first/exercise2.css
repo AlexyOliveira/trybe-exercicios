@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    font-size: 20px;
+    min-width: 360px;
+    
+  }
+
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(25, 30, 30);
+  color: white;
+  
+ 
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;  
+    margin-top: -5px; 
+}
+
+nav ul li {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+header p{
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+nav ul li:active{
+    background-color: rgb(73, 73, 39);
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 413px) {
+body{
+    background-color: grey;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
