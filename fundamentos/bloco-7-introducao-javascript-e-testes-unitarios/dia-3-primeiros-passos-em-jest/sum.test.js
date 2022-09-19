@@ -41,4 +41,7 @@ describe("Exercício 3", () => {
     it("número divisível por 5 resultado esperado",()=>{
         expect(myFizzBuzz(5)).toBe('buzz');
     });
+    it("número que não é divisível por 3 ou 5 resultado esperado",()=>{
+        expect(myFizzBuzz(1)).toBe(1);
+    });
 });
