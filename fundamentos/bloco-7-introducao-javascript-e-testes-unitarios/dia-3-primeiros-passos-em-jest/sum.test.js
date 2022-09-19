@@ -38,4 +38,7 @@ describe("Exercício 3", () => {
     it("número divisível por 3 e 5 resultado esperado",()=>{
         expect(myFizzBuzz(30)).toBe('fizzbuzz');
     });
+    it("número divisível por 5 resultado esperado",()=>{
+        expect(myFizzBuzz(5)).toBe('buzz');
+    });
 });
