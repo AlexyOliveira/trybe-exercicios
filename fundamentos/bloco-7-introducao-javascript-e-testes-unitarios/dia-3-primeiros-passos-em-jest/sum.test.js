@@ -44,4 +44,7 @@ describe("Exercício 3", () => {
     it("número que não é divisível por 3 ou 5 resultado esperado",()=>{
         expect(myFizzBuzz(1)).toBe(1);
     });
+    it('não é um número, resultado esperado',()=>{
+        expect(myFizzBuzz('3')).toBe(false);
+    });
 });
