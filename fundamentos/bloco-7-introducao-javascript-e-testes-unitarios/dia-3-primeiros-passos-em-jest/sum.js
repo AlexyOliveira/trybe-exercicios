@@ -58,16 +58,23 @@ function decode(text) {
 //////////Ex: 5
 
 function techList(array, name) {
- 
-  if (array.length === 0) {
-  return "Vazio!"
+  if (array.length === 0) return "Vazio!";
+    
+  const arrayOrdenado = array.sort();
+
+  const listaTech = [];
+
+  for (let index = 0; index < arrayOrdenado.length; index += 1) {
+    listaTech.push({
+      tech: arrayOrdenado[index],
+      name: name,
+    });
   }
- 
+
+  return listaTech;
 }
 
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Lucas'))
-
-
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
 
 // implemente seus testes aqui
 
