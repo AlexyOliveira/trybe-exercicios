@@ -64,4 +64,7 @@ describe("Exercício 4 encode, decode", () => {
   it("demais letras/números não são convertidos para cada caso", () => {
     expect(encode('bcdfghjklmnpqrstvxywz')).toBe("bcdfghjklmnpqrstvxywz");
   });
+  it("a string que é retornada pelas funções tem o mesmo número de caracteres que a string passada como parâmetro", () => {
+    expect(encode('Trybe').length).toBe(5);
+  });
 });
