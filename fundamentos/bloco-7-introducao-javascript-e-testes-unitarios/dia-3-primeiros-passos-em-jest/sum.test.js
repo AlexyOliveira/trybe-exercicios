@@ -55,4 +55,7 @@ describe("Exercício 4 encode, decode", () => {
   it("encode e decode são funções",()=>{
     expect(typeof encode  && typeof decode).toBe('function')
   });
+  it("as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente",()=>{
+    expect( encode('aeiou')).toBe('12345')
+  });
 });
