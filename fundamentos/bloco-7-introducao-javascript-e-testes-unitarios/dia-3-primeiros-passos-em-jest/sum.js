@@ -30,31 +30,45 @@ function myFizzBuzz(num) {
 
 //////////Ex: 4
 
-const vogais = ['a', 'e', 'i', 'o', 'u'];
+const vogais = ["a", "e", "i", "o", "u"];
 const code = [1, 2, 3, 4, 5];
 
 function encode(text) {
-  const caracters = text.split('');
+  const caracters = text.split("");
   caracters.forEach((letra, i) => {
     vogais.forEach((vogal, k) => {
-      caracters[i] = (letra === vogal) ? code[k] : caracters[i];
+      caracters[i] = letra === vogal ? code[k] : caracters[i];
     });
   });
 
-  return caracters.join('');
+  return caracters.join("");
 }
 
 function decode(text) {
-  const caracters = text.split('');
+  const caracters = text.split("");
   caracters.forEach((caracter, i) => {
     code.forEach((num, k) => {
-      caracters[i] = (caracter === num.toString()) ? vogais[k] : caracters[i];
+      caracters[i] = caracter === num.toString() ? vogais[k] : caracters[i];
     });
   });
 
-  return caracters.join('');
+  return caracters.join("");
 }
+
+//////////Ex: 5
+
+function techList(array, name) {
+ 
+  if (array.length === 0) {
+  return "Vazio!"
+  }
+ 
+}
+
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Lucas'))
+
+
 
 // implemente seus testes aqui
 
-module.exports = { sum, myRemove, myFizzBuzz, encode, decode };
+module.exports = { sum, myRemove, myFizzBuzz, encode, decode, techList };
