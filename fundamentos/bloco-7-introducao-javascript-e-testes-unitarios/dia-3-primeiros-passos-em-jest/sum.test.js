@@ -1,4 +1,4 @@
-const { sum, myRemove, myFizzBuzz } = require("./sum");
+const { sum, myRemove, myFizzBuzz, encode, decode } = require("./sum");
 
 describe("Exercício 1, sum", () => {
   it("retorno de sum(4, 5) é 9", () => {
@@ -17,7 +17,7 @@ describe("Exercício 1, sum", () => {
 
 ////////////////Ex: 2
 
-describe("Exercício 2", () => {
+describe("Exercício 2 myRemove", () => {
   it("a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado", () => {
     expect(myRemove([1, 2, 3, 4], 3)).toEqual([1, 2, 4]);
   });
@@ -31,20 +31,28 @@ describe("Exercício 2", () => {
 
 ////////////////Ex: 3
 
-describe("Exercício 3", () => {
-    it("número divisível por 3 resultado esperado",()=>{
-        expect(myFizzBuzz(3)).toBe('fizz');
-    });
-    it("número divisível por 3 e 5 resultado esperado",()=>{
-        expect(myFizzBuzz(30)).toBe('fizzbuzz');
-    });
-    it("número divisível por 5 resultado esperado",()=>{
-        expect(myFizzBuzz(5)).toBe('buzz');
-    });
-    it("número que não é divisível por 3 ou 5 resultado esperado",()=>{
-        expect(myFizzBuzz(1)).toBe(1);
-    });
-    it('não é um número, resultado esperado',()=>{
-        expect(myFizzBuzz('3')).toBe(false);
-    });
+describe("Exercício 3 fizzBuzz", () => {
+  it("número divisível por 3 resultado esperado", () => {
+    expect(myFizzBuzz(3)).toBe("fizz");
+  });
+  it("número divisível por 3 e 5 resultado esperado", () => {
+    expect(myFizzBuzz(30)).toBe("fizzbuzz");
+  });
+  it("número divisível por 5 resultado esperado", () => {
+    expect(myFizzBuzz(5)).toBe("buzz");
+  });
+  it("número que não é divisível por 3 ou 5 resultado esperado", () => {
+    expect(myFizzBuzz(1)).toBe(1);
+  });
+  it("não é um número, resultado esperado", () => {
+    expect(myFizzBuzz("3")).toBe(false);
+  });
+});
+
+////////////////Ex: 4
+
+describe("Exercício 4 encode, decode", () => {
+  it("encode e decode são funções",()=>{
+    expect(typeof encode  && typeof decode).toBe('function')
+  });
 });
