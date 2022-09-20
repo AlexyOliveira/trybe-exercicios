@@ -52,13 +52,16 @@ describe("Exercício 3 fizzBuzz", () => {
 ////////////////Ex: 4
 
 describe("Exercício 4 encode, decode", () => {
-  it("encode e decode são funções",()=>{
-    expect(typeof encode  && typeof decode).toBe('function')
+  it("encode e decode são funções", () => {
+    expect(typeof encode && typeof decode).toBe("function");
   });
-  it("as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente",()=>{
-    expect( encode('aeiou')).toBe('12345')
+  it("as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente", () => {
+    expect(encode("aeiou")).toBe("12345");
   });
-  it("os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u, respectivamente",()=>{
-    expect( decode('12345')).toBe('aeiou')
+  it("os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u, respectivamente", () => {
+    expect(decode("12345")).toBe("aeiou");
+  });
+  it("demais letras/números não são convertidos para cada caso", () => {
+    expect(encode('bcdfghjklmnpqrstvxywz')).toBe("bcdfghjklmnpqrstvxywz");
   });
 });
