@@ -59,7 +59,7 @@ function decode(text) {
 
 function techList(array, name) {
   if (array.length === 0) return "Vazio!";
-    
+
   const arrayOrdenado = array.sort();
 
   const listaTech = [];
@@ -74,8 +74,30 @@ function techList(array, name) {
   return listaTech;
 }
 
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
+//////////Ex: 6
 
+function hydrate(numeroBebida) {
+  let numeroBebidas = 0;
+  for (let index = 0; index < numeroBebida.length; index++) {
+    if (parseInt(numeroBebida[index])) {
+      numeroBebidas += parseInt(numeroBebida[index]);
+    }
+  }
+  if (numeroBebidas === 1) {
+    return `${numeroBebidas} copo de água`;
+  }
+  return `${numeroBebidas} copos de água`;
+}
 // implemente seus testes aqui
 
-module.exports = { sum, myRemove, myFizzBuzz, encode, decode, techList };
+console.log(hydrate("1 "));
+
+module.exports = {
+  sum,
+  myRemove,
+  myFizzBuzz,
+  encode,
+  decode,
+  techList,
+  hydrate,
+};
